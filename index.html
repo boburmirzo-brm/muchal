@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B R M - Mahsuloti</title>
+    <style>
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+            /* background: radial-gradient( circle, #fff, dodgerblue); */
+            /* background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+            background: #5f2c82;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            overflow: hidden;
+        }
+        h2{
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            color: #ddd;
+            font-size: 34px;
+            padding-top: 50px;
+        }
+        .container{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            color: #ddd;;
+
+        }
+        #form input{
+            height: 40px;
+            width: 200px;
+            text-indent: .7rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        #form input:focus{
+            opacity: .7;
+        }
+        #form button{
+            height: 40px;
+            width: 200px;
+            background-color: blue;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
+        #form button:hover{
+            background-color: #0505bb;
+            cursor: pointer;
+        }
+        #result{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        img{
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+        }
+        img,
+        p{
+            animation: animate .5s     ;
+        }
+        @keyframes animate {
+            0%{
+                opacity: .1;
+                transform: scale(0);
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Muchalingizni Bilib Oling</h2>
+    <div class="container">
+        <form id="form">
+            <label>Yilingizni kiriting:</label>
+            <br><br>
+            <input type="number" id="number__input" minlength="4" maxlength="4" placeholder="misil: 1998">
+            <br><br>
+            <button type="submit">Aniqlash</button>
+        </form>
+
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
