@@ -16,6 +16,14 @@
             background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             overflow: hidden;
+            background-size: 200%;
+            animation: bg 3s linear alternate infinite  ;
+        }
+        @keyframes bg {
+            0%{background-position: 20%;}
+            50%{background-position: 80%;}
+            100%{background-position: 20%;}
+            
         }
         h2{
             text-align: center;
